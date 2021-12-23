@@ -9,6 +9,8 @@ import Foundation
 
 class ApiRequest {
     
+    var delegate: ApiRequestDelegate?
+    
     func getVideos() {
         
         // Create an URL object
@@ -36,8 +38,15 @@ class ApiRequest {
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
                 let response = try decoder.decode(Response.self, from: data!)
-        
+                
                 dump(response)
+                
+                // call the delegate method
+                if response.items != nil {
+                    DispatchQueue.main.async {
+                        self.delegate?.videosFetched(response.items!)
+                    }
+                }
             }
             
             catch let error  {

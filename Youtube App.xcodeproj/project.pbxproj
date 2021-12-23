@@ -11,6 +11,8 @@
 		9F39DD4F2773A22200C62176 /* Api Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39DD4E2773A22200C62176 /* Api Request.swift */; };
 		9F39DD512773A23A00C62176 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39DD502773A23A00C62176 /* Video.swift */; };
 		9F39DD542773A45F00C62176 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39DD532773A45F00C62176 /* Response.swift */; };
+		9F92F5B4277499E800DCAAD2 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F92F5B2277499E800DCAAD2 /* CustomTableViewCell.swift */; };
+		9F92F5B72774A09500DCAAD2 /* ApiRequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F92F5B62774A09500DCAAD2 /* ApiRequestDelegate.swift */; };
 		9FE6D5A02770E6DB00EB3D39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE6D59F2770E6DB00EB3D39 /* AppDelegate.swift */; };
 		9FE6D5A22770E6DB00EB3D39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE6D5A12770E6DB00EB3D39 /* SceneDelegate.swift */; };
 		9FE6D5A42770E6DB00EB3D39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE6D5A32770E6DB00EB3D39 /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 		9F39DD4E2773A22200C62176 /* Api Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api Request.swift"; sourceTree = "<group>"; };
 		9F39DD502773A23A00C62176 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		9F39DD532773A45F00C62176 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		9F92F5B2277499E800DCAAD2 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		9F92F5B62774A09500DCAAD2 /* ApiRequestDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestDelegate.swift; sourceTree = "<group>"; };
 		9FE6D59C2770E6DB00EB3D39 /* Youtube App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Youtube App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE6D59F2770E6DB00EB3D39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FE6D5A12770E6DB00EB3D39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 		9F39DD482773A0D700C62176 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				9F92F5B62774A09500DCAAD2 /* ApiRequestDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -112,6 +117,14 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		9F92F5B1277499CE00DCAAD2 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				9F92F5B2277499E800DCAAD2 /* CustomTableViewCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		9FB0BF5B2770EB99000DAAEF /* Root */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +145,7 @@
 		9FB0BF5D2770EBBC000DAAEF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				9F92F5B1277499CE00DCAAD2 /* TableView */,
 				9FB0BF5F2770EBD3000DAAEF /* Main Page */,
 			);
 			path = Scenes;
@@ -264,10 +278,12 @@
 			files = (
 				9FE6D5A42770E6DB00EB3D39 /* ViewController.swift in Sources */,
 				9F39DD512773A23A00C62176 /* Video.swift in Sources */,
+				9F92F5B4277499E800DCAAD2 /* CustomTableViewCell.swift in Sources */,
 				9FE6D5A02770E6DB00EB3D39 /* AppDelegate.swift in Sources */,
 				9FE6D5A22770E6DB00EB3D39 /* SceneDelegate.swift in Sources */,
 				9F39DD4D2773A1AF00C62176 /* Constants.swift in Sources */,
 				9F39DD4F2773A22200C62176 /* Api Request.swift in Sources */,
+				9F92F5B72774A09500DCAAD2 /* ApiRequestDelegate.swift in Sources */,
 				9F39DD542773A45F00C62176 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
