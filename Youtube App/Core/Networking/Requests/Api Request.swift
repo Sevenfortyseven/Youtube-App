@@ -39,7 +39,7 @@ class ApiRequest {
                 decoder.dateDecodingStrategy = .iso8601
                 let response = try decoder.decode(Response.self, from: data!)
                 
-                dump(response)
+//                dump(response)
                 
                 // call the delegate method
                 if response.items != nil {

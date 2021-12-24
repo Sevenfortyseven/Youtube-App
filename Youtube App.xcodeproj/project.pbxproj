@@ -11,6 +11,7 @@
 		9F39DD4F2773A22200C62176 /* Api Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39DD4E2773A22200C62176 /* Api Request.swift */; };
 		9F39DD512773A23A00C62176 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39DD502773A23A00C62176 /* Video.swift */; };
 		9F39DD542773A45F00C62176 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39DD532773A45F00C62176 /* Response.swift */; };
+		9F4CA0D327765A6A00C50D77 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CA0D227765A6A00C50D77 /* CacheManager.swift */; };
 		9F92F5B4277499E800DCAAD2 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F92F5B2277499E800DCAAD2 /* CustomTableViewCell.swift */; };
 		9F92F5B72774A09500DCAAD2 /* ApiRequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F92F5B62774A09500DCAAD2 /* ApiRequestDelegate.swift */; };
 		9FE6D5A02770E6DB00EB3D39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE6D59F2770E6DB00EB3D39 /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		9F39DD4E2773A22200C62176 /* Api Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api Request.swift"; sourceTree = "<group>"; };
 		9F39DD502773A23A00C62176 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		9F39DD532773A45F00C62176 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		9F4CA0D227765A6A00C50D77 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		9F92F5B2277499E800DCAAD2 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		9F92F5B62774A09500DCAAD2 /* ApiRequestDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestDelegate.swift; sourceTree = "<group>"; };
 		9FE6D59C2770E6DB00EB3D39 /* Youtube App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Youtube App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,7 @@
 		9F39DD4B2773A11F00C62176 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				9F4CA0D227765A6A00C50D77 /* CacheManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				9FE6D5A02770E6DB00EB3D39 /* AppDelegate.swift in Sources */,
 				9FE6D5A22770E6DB00EB3D39 /* SceneDelegate.swift in Sources */,
 				9F39DD4D2773A1AF00C62176 /* Constants.swift in Sources */,
+				9F4CA0D327765A6A00C50D77 /* CacheManager.swift in Sources */,
 				9F39DD4F2773A22200C62176 /* Api Request.swift in Sources */,
 				9F92F5B72774A09500DCAAD2 /* ApiRequestDelegate.swift in Sources */,
 				9F39DD542773A45F00C62176 /* Response.swift in Sources */,

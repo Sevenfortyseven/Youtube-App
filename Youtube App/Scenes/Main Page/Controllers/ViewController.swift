@@ -53,18 +53,17 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier, for: indexPath) as! CustomTableViewCell
         
         // Configure the cell with data
-        
-        // Title
-        cell.videoTitle.text = videos[indexPath.row].title
+        cell.initializeCellContent(videos[indexPath.row])
         
         //return the cell
         return cell
     }
     
     // Cell Size
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 400
+//    }
+    
     
     // MARK: - Network Request Delegate Methods
     
