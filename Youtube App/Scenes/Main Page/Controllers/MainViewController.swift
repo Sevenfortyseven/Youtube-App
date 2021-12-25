@@ -15,6 +15,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     private var apiRequest = ApiRequest()
     private var videos = [Video]()
     
+   
+    
     // MARK: - IBOutlets
     @IBOutlet weak var customTableView: UITableView!
     
@@ -24,6 +26,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         apiRequest.getVideos()
         registerTableView()
         apiRequest.delegate = self
+        updateUI()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,6 +36,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
+    }
+    
+    // MARK: - UI
+    private func updateUI() {
+        customTableView.backgroundColor  = .darkGray
+        navigationController?.isNavigationBarHidden = true
     }
     
     
@@ -59,11 +69,18 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-    // Cell Size
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 400
-//    }
-    
+    // Action on Cell interaction
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // Target viewcontroller to pass data
+        let selectedVideo = videos[indexPath.row]
+        let targetVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: DetailsViewController.identifier) as! DetailsViewController
+        targetVC.video = selectedVideo
+        // Navigate to DetailsPageController
+        self.navigationController?.present(targetVC, animated: true, completion: nil)
+  
+    }
+ 
     
     // MARK: - Network Request Delegate Methods
     

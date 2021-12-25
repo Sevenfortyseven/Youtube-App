@@ -12,11 +12,14 @@
 		9F39DD512773A23A00C62176 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39DD502773A23A00C62176 /* Video.swift */; };
 		9F39DD542773A45F00C62176 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39DD532773A45F00C62176 /* Response.swift */; };
 		9F4CA0D327765A6A00C50D77 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CA0D227765A6A00C50D77 /* CacheManager.swift */; };
+		9F4CA0D62776693500C50D77 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CA0D52776693500C50D77 /* DetailsViewController.swift */; };
+		9F4CA0DB27766CD600C50D77 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CA0DA27766CD600C50D77 /* NavigationManager.swift */; };
+		9F4CA0DD2776860B00C50D77 /* DateFormatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CA0DC2776860B00C50D77 /* DateFormatManager.swift */; };
 		9F92F5B4277499E800DCAAD2 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F92F5B2277499E800DCAAD2 /* CustomTableViewCell.swift */; };
 		9F92F5B72774A09500DCAAD2 /* ApiRequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F92F5B62774A09500DCAAD2 /* ApiRequestDelegate.swift */; };
 		9FE6D5A02770E6DB00EB3D39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE6D59F2770E6DB00EB3D39 /* AppDelegate.swift */; };
 		9FE6D5A22770E6DB00EB3D39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE6D5A12770E6DB00EB3D39 /* SceneDelegate.swift */; };
-		9FE6D5A42770E6DB00EB3D39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE6D5A32770E6DB00EB3D39 /* ViewController.swift */; };
+		9FE6D5A42770E6DB00EB3D39 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE6D5A32770E6DB00EB3D39 /* MainViewController.swift */; };
 		9FE6D5A72770E6DB00EB3D39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE6D5A52770E6DB00EB3D39 /* Main.storyboard */; };
 		9FE6D5A92770E6DB00EB3D39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE6D5A82770E6DB00EB3D39 /* Assets.xcassets */; };
 		9FE6D5AC2770E6DB00EB3D39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE6D5AA2770E6DB00EB3D39 /* LaunchScreen.storyboard */; };
@@ -28,12 +31,15 @@
 		9F39DD502773A23A00C62176 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		9F39DD532773A45F00C62176 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		9F4CA0D227765A6A00C50D77 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		9F4CA0D52776693500C50D77 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		9F4CA0DA27766CD600C50D77 /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		9F4CA0DC2776860B00C50D77 /* DateFormatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatManager.swift; sourceTree = "<group>"; };
 		9F92F5B2277499E800DCAAD2 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		9F92F5B62774A09500DCAAD2 /* ApiRequestDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestDelegate.swift; sourceTree = "<group>"; };
 		9FE6D59C2770E6DB00EB3D39 /* Youtube App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Youtube App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE6D59F2770E6DB00EB3D39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FE6D5A12770E6DB00EB3D39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9FE6D5A32770E6DB00EB3D39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FE6D5A32770E6DB00EB3D39 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9FE6D5A62770E6DB00EB3D39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FE6D5A82770E6DB00EB3D39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FE6D5AB2770E6DB00EB3D39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,7 +113,9 @@
 		9F39DD4B2773A11F00C62176 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				9F4CA0D827766C6100C50D77 /* Navigation */,
 				9F4CA0D227765A6A00C50D77 /* CacheManager.swift */,
+				9F4CA0DC2776860B00C50D77 /* DateFormatManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -118,6 +126,30 @@
 				9F39DD532773A45F00C62176 /* Response.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		9F4CA0D42776691900C50D77 /* Details Page */ = {
+			isa = PBXGroup;
+			children = (
+				9F4CA0D72776694900C50D77 /* Controllers */,
+			);
+			path = "Details Page";
+			sourceTree = "<group>";
+		};
+		9F4CA0D72776694900C50D77 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F4CA0D52776693500C50D77 /* DetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9F4CA0D827766C6100C50D77 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				9F4CA0DA27766CD600C50D77 /* NavigationManager.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		9F92F5B1277499CE00DCAAD2 /* TableView */ = {
@@ -150,6 +182,7 @@
 			children = (
 				9F92F5B1277499CE00DCAAD2 /* TableView */,
 				9FB0BF5F2770EBD3000DAAEF /* Main Page */,
+				9F4CA0D42776691900C50D77 /* Details Page */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -174,7 +207,7 @@
 		9FB0BF602770EBDA000DAAEF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9FE6D5A32770E6DB00EB3D39 /* ViewController.swift */,
+				9FE6D5A32770E6DB00EB3D39 /* MainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -279,10 +312,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FE6D5A42770E6DB00EB3D39 /* ViewController.swift in Sources */,
+				9FE6D5A42770E6DB00EB3D39 /* MainViewController.swift in Sources */,
 				9F39DD512773A23A00C62176 /* Video.swift in Sources */,
 				9F92F5B4277499E800DCAAD2 /* CustomTableViewCell.swift in Sources */,
+				9F4CA0D62776693500C50D77 /* DetailsViewController.swift in Sources */,
 				9FE6D5A02770E6DB00EB3D39 /* AppDelegate.swift in Sources */,
+				9F4CA0DB27766CD600C50D77 /* NavigationManager.swift in Sources */,
+				9F4CA0DD2776860B00C50D77 /* DateFormatManager.swift in Sources */,
 				9FE6D5A22770E6DB00EB3D39 /* SceneDelegate.swift in Sources */,
 				9F39DD4D2773A1AF00C62176 /* Constants.swift in Sources */,
 				9F4CA0D327765A6A00C50D77 /* CacheManager.swift in Sources */,
@@ -437,6 +473,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8JDHD2Z7HU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Youtube App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,6 +501,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8JDHD2Z7HU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Youtube App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

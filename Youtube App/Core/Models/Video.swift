@@ -53,3 +53,15 @@ struct Video: Decodable {
     }
     
 }
+
+
+struct TMPVideo {
+    
+    var videoId: String
+    var title: String
+    var description: String
+    var thumbnail: String
+    var published: String
+}
+
+

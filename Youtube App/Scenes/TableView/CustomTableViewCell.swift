@@ -12,6 +12,9 @@ class CustomTableViewCell: UITableViewCell {
     // Self identifier
     private(set) static var identifier = "CustomTableViewCell"
     
+    // MARK: - Instances
+
+    
     
     // MARK: - Initialization
     
@@ -21,11 +24,12 @@ class CustomTableViewCell: UITableViewCell {
         addSubviews()
         initializeConstraints()
         initializeStackView()
+        updateUI()
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        updateUI()
+        
         
     }
     
@@ -47,9 +51,8 @@ class CustomTableViewCell: UITableViewCell {
         self.videoTitle.text = video.title
         
         // Publish date
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
-        self.videoDateLabel.text = dateFormatter.string(from: video.published)
+
+        self.videoDateLabel.text = DateFormatManager.formatDate(video.published)
         
         // Check cache before downloading image data
         if let cachedData = CacheManager.getVideoCache(video.thumbnail) {
@@ -111,6 +114,10 @@ class CustomTableViewCell: UITableViewCell {
         videoDateLabel.setContentHuggingPriority(.defaultLow, for: .vertical)
         videoTitle.setContentHuggingPriority(.defaultHigh, for: .vertical)
         videoThumbnail.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
+        
+        // Cell selectionStyle off
+        self.selectionStyle = .none
+        self.backgroundColor = .clear
     }
     
     // MARK: - Content View
@@ -121,6 +128,8 @@ class CustomTableViewCell: UITableViewCell {
         title.translatesAutoresizingMaskIntoConstraints = false
         title.adjustsFontSizeToFitWidth = true
         title.numberOfLines = 0
+        title.textColor = .white
+        title.font = .preferredFont(forTextStyle: .title2, compatibleWith: .current)
         title.textAlignment = .left
         return title
     }()
@@ -139,6 +148,8 @@ class CustomTableViewCell: UITableViewCell {
         let date = UILabel()
         date.translatesAutoresizingMaskIntoConstraints = false
         date.textAlignment = .left
+        date.textColor = .white
+        date.font = .preferredFont(forTextStyle: .footnote, compatibleWith: .current)
         return date
     }()
     
